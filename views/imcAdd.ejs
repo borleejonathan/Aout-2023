@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Calcul IMC</title>
+        <link rel="stylesheet" href="/CSS/style.css"/>
+    </head>
+    <body>
+        <a href="/user/add">Accueil</a>
+        <a href="/user">Historique</a>
+        <h1>Calcul de l'IMC</h1>
+        <form name="form" action="/user/new" method="POST">
+            Date:
+            <input type="text" name="date" value="<%= date %>" /><br />
+            Hauteur en cm:
+            <input type="text" name="height" value="<%= height %>" /><br />
+            Poids:
+            <input type="text" name="weight" value="<%= weight %>" /><br />
+            <input type="hidden" name="idhistory" value="<%= idhistory %>" />
+            <input type="submit" name="save" value="Envoyer" formaction="/user" />
+        </form>
+    

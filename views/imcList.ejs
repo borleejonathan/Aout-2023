@@ -1,0 +1,27 @@
+
+
+        <link rel="stylesheet" href="/CSS/style.css"/>
+
+<a href="/user/add">Accueil</a>
+<a href="/user">Historique</a>
+<h1>Historique des IMC</h1>
+<table>
+    <thead>
+      <tr>
+        <th colspan="2">Date</th>
+        <th colspan="2">IMC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <ul>
+            <% for (let i = 0 ; i < history.length ; i++) { %>
+            <li>
+                <%= history[i].date %> <%= history[i].weight %>
+            </li>
+            <% } %>
+        </ul>
+      </tr>
+    </tbody>
+</table>
+
